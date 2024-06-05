@@ -22,7 +22,7 @@ agua, energia e telefone e exibir o total.
    leia(telefone)
 
 
-   escreva("Seu gasto total e: ", (agua + energia + telefone))
+   escreva("Seu gasto total é: ", (agua + energia + telefone))
 
 }
 
