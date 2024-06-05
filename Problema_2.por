@@ -16,7 +16,7 @@ agua, energia e telefone e exibir o total.
    leia(agua)
 
    escreva("Custo com energia:")
-   leia(energia)
+   leia(energia) 
 
    escreva("Custo com telefone:")
    leia(telefone)
