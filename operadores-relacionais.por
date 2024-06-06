@@ -15,7 +15,8 @@ programa
   Operadores Logicos 
 
  ou fim_de_jogo = tempo_restante == 0 ou municao == 0 ou pontos == 10
- e
+ e exemplo abaixo
+ nao operador que inverte o valor logico
   */
 
   funcao inicio()
