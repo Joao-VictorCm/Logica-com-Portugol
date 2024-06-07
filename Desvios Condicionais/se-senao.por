@@ -3,19 +3,18 @@ programa{
 
 funcao inicio(){
 
-    logico pizza_fria = verdadeiro
+real rendaMensal 
 
-   escreva("Entra em casa! \n")
-   escreva("Olha para a mesa! \n")
+escreva("Qual sua renda mensal?")
 
+leia(rendaMensal)
 
-   se (pizza_fria){                   // Só sera executado se o valor for VERDADEIRO !!
-   escreva("Esquenta a pizza! \n") 
-   }
-   senao{
-    escreva("Come a pizza 1651! \n")
-   }
-
-}
+  se(rendaMensal >= 5214){
+  escreva("Você faz parte dos 10% mais ricos do Brasil")
+  }
+  senao
+  {
+  escreva("Você não faz parte dos 10% mais ricos do Brasil, mas vai chegar lá um dia! tenha fé")
+  }
 
 }
