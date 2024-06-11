@@ -18,13 +18,43 @@ programa
 	inteiro bola_x = 0 
 	inteiro bola_y = ALTURA_DA_TELA/2 // a bola inicia no centro da tela
 
-	logico indo_pra_direita = verdadeiro
+	logico indo_pra_direita = verdadeiro 
 	logico indo_pra_baixo = verdadeiro
 	
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	funcao processaLogica()
 	{
-		// AQUI
+		se(indo_pra_direita){
+		bola_x = bola_x + 5
+		}
+		senao{
+		bola_x = bola_x - 5
+		}
+
+		se(bola_x >= 600){
+		indo_pra_direita = falso
+		}
+
+		se(bola_x <= 0){
+		indo_pra_direita = verdadeiro
+		}
+
+
+		se(indo_pra_baixo){
+		bola_y = bola_x + 5
+		}
+		senao{
+		bola_y = bola_x - 5
+		}
+
+		se(bola_y >= 300){
+		indo_pra_baixo = falso
+		}
+
+		se(bola_y <= 0){
+		indo_pra_baixo = verdadeiro
+		}
+
 		
 	}
 
@@ -53,7 +83,7 @@ programa
 			processaLogica()
 			desenha()
 			u.aguarde(VELOCIDADE_DO_JOGO)
-		}
+		}ol
 	}
 
 }
