@@ -7,8 +7,10 @@ funcao inicio(){
  
 
  
- enquanto(contador == 10){
-  escreva("1")
+ enquanto(contador <= 10){
+  escreva(contador, "\n")
+
+  contador ++
   }
 
 }
